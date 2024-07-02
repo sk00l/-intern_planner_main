@@ -1,16 +1,45 @@
-# intern_planner
+# Intern Planner
 
-A new Flutter project.
+Intern Planner is a Flutter application designed to manage intern details and assignments efficiently. This app provides a user-friendly interface to display intern profiles, personal information, and assignment details.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Display user profile with personal information.
+- Show intern-specific information such as department, start date, and number of projects.
+- Display a list of projects with details including type, name, GitHub link, and demo link.
+- Navigate to GitHub repositories directly from the app.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/intern-planner.git
+   cd intern-planner
+   ```
+2. Install dependencies:
+
+    ```bash
+    flutter pub get
+    ```
+3. Run the App
+
+## Usage
+
+1. **Navigate to User Profile**: View the user's personal and intern information.
+2. **View Projects**: See a list of projects assigned to the intern, with links to GitHub and demo.
+
+## Code Structure
+- constants: Contains color constants used in the app.
+- data: Contains dummy data and models used in the app.
+- screens: Contains the main screen for displaying user details.
+
+## Dependencies
+- [font_awesome_flutter](https://pub.dev/packages/font_awesome_flutter)
+- [url_launcher](https://pub.dev/packages/url_launcher)
+
+## Hosting
+The hosted version of the Intern Planner can be accessed [here]().
