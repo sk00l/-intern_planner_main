@@ -42,4 +42,4 @@ To run this project locally, follow these steps:
 - [url_launcher](https://pub.dev/packages/url_launcher)
 
 ## Hosting
-The hosted version of the Intern Planner can be accessed [here]().
+The hosted version of the Intern Planner can be accessed [here](https://sk00l.github.io/-intern_planner_main/).
