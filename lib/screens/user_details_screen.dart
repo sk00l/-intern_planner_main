@@ -97,10 +97,30 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              'Personal Information',
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
                           _buildRow('Gender:', ' Male'),
                           _buildRow('Date of birth:', ' 09/11/2002'),
                           _buildRow('Phone number:', ' +977 9840378855'),
                           const Divider(),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              'Personal Information',
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
                           _buildRow('Department:', ' Flutter Intern'),
                           _buildRow('Start Date:', ' 01/07/2021'),
                           _buildRow('Number of projects:', ' 1'),
