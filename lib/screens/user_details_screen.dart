@@ -258,7 +258,12 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                                 TableCellVerticalAlignment.middle,
                             child: Padding(
                               padding: const EdgeInsets.all(8),
-                              child: Text(userModel.demoLink),
+                              child: TextButton(
+                                onPressed: () {
+                                  launchUrl(Uri.parse(userModel.demoLink));
+                                },
+                                child: Text(userModel.demoLink),
+                              ),
                             ),
                           ),
                         ],
