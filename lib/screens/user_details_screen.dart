@@ -48,7 +48,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
               ),
               Container(
                 height: 400,
-                width: double.infinity,
+                width: 600,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                   color: AppColor.white,
@@ -70,7 +70,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                         ),
                       ),
                       child: const Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(40.0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -96,6 +96,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Padding(
                             padding: EdgeInsets.all(8.0),
@@ -114,7 +115,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                           const Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Text(
-                              'Personal Information',
+                              'Intern Information',
                               style: TextStyle(
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
@@ -124,7 +125,6 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                           _buildRow('Department:', ' Flutter Intern'),
                           _buildRow('Start Date:', ' 01/07/2021'),
                           _buildRow('Number of projects:', ' 1'),
-                          const Divider(),
                         ],
                       ),
                     ),
@@ -162,11 +162,11 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                       style: BorderStyle.solid,
                       width: 1.0,
                     ),
-                    // verticalInside: BorderSide(
-                    //   color: Colors.grey,
-                    //   style: BorderStyle.solid,
-                    //   width: 1.0,
-                    // ),
+                    verticalInside: BorderSide(
+                      color: Colors.grey,
+                      style: BorderStyle.solid,
+                      width: 1.0,
+                    ),
                   ),
                   children: [
                     const TableRow(
@@ -174,7 +174,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(12),
                             topRight: Radius.circular(12)),
-                        color: Colors.redAccent,
+                        color: Colors.blueAccent,
                       ),
                       children: [
                         TableCell(
